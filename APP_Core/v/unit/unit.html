@@ -1,0 +1,20 @@
+<style type="text/css">
+.sidebar_unit {display: inline;position: fixed;z-index: 1000;left: 1rem;bottom: 2rem;}
+.sidebar_unit ul,li{list-style: none;margin:0;padding:0;}
+.sidebar_unit ul{}
+.sidebar_unit li{list-style: none;margin:5px;}
+.sidebar_unit a{text-decoration: none;color:#fff;display:block;padding:10px;background:#0099CC;}
+.sidebar_unit a:hover{color:#fff;background:#003366;}
+</style>
+<div class="sidebar_unit">
+	<ul>
+		<li><a href="#">模板加载模块演示</a></li>
+		
+		<li><a href="<?php echo HOME; ?>">系统首页</a></li>
+		
+		<li><a href="<?=U('mt=tpl','','demo')?>">DEMO页面 1</a></li>
+		
+		<li><a href="<?=$URL['demo']?>">DEMO页面 2</a></li>
+		
+	</ul>
+</div>
